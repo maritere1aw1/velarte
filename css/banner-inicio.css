@@ -1,0 +1,85 @@
+.courgette-regular {
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat-bold {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.amita-regular {
+    font-family: "Amita", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat-regular {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Cambiado de imagen a div con background-image */
+.imagen-banner-fondo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-size: cover;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: "Amita", serif;
+    font-weight: 400;
+}
+
+button {
+    background-color: #FDF1F1;
+    border: none;
+    padding: 12px 24px;
+    color: #000000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    position: fixed;
+    bottom: 90px;
+    right: 100px;
+    z-index: 1000; /* Valor alto para estar por encima de todos los elementos */
+}
+
+/* Sección del Banner */
+.banner-principal-seccion1 {
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Reducido de 100vh para subir todo el banner */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: -20px; /* Valor negativo para subir toda la sección */
+}
+
+/* Contenedor del texto */
+.texto-banner {
+    position: absolute;
+    bottom: 60px; /* Aumentado para subir el texto dentro del banner */
+    right: 32px;
+    background: rgba(0, 0, 0, 0.39);
+    padding: 24px;
+    border-radius: 8px;
+    text-align: right;
+    color: white;
+    max-width: 600px; /* Aumentado de 400px a 600px */
+    width: 80%; /* Añadido para ocupar más espacio horizontal */
+}
