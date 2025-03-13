@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e2e3de;
+    align-items: center;
+    padding: 6px 80px 10px 20px;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+header div p {
+    font-size: 15px;
+    margin: 0;
+    padding-left: 25px;
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color:
+        #2a3d2c;
+
+}
+
+header div img {
+    margin: 0;
+    width: 50%;
+}
+
+header nav {
+    display: flex;
+    align-content: center;
+    gap: 20px;
+}
+
+header nav a {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+}
+
+header nav a:hover {
+    color: #fd9797;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #e2e3de;
+    padding: 15px 0 60px;
+}
+
+footer .logo-footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+}
+
+footer .logo-footer p {
+    font-size: 12px;
+    margin: 0;
+    padding-left: 25px;
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #2a3d2c;
+
+}
+
+footer .logo-footer img {
+    margin: 0;
+    width: 45%;
+    max-width: 180px;
+}
+
+footer p {
+    font-size: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #41452c;
+}
+
+footer .redes {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 20px;
+    gap: 95px;
+    align-items: center;
+    align-content: center;
+
+}
+
+footer .redes .icono-redes {
+    font-size: 35px;
+    color: #41452c;
+}
+
+footer .chat {
+    text-decoration: none;
+}
+
+footer .redes i:hover {
+    color: #fd9797;
+}
+
+footer .ubicacion,
+footer .phone {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+
+}
+
+footer .ubicacion p,
+footer .phone p {
+    margin: 0;
+    text-align: center;
+}
+
+footer .ubicacion{ margin-bottom: 5px;}
+footer .ubicacion i {
+    color: #41452c;
+    z-index: 2;
+}
+
+footer .phone div {
+    background-color: #41452c;
+    /* Color verde de WhatsApp */
+    color: white;
+    /* Color del icono */
+    width: 10px;
+    /* Ajusta el tamaño del botón */
+    height: 10px;
+    border-radius: 50%;
+    /* Hace que el fondo sea redondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}

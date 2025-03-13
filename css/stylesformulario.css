@@ -1,0 +1,153 @@
+CSS
+
+.formulario
+{  box-sizing: border-box;
+}
+
+/* Títulos formulario */
+.title-1-formulario {
+  color: #41452c;
+  text-align: center;
+  font-family: "Amita", "sans-serif";
+  font-size: 32px;
+  font-weight: 400;
+  height: 40px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.linea-divisora-formulario {
+  height: 80px;
+  width: 1500px;
+  position: relative;
+  justify-items: center;
+  }
+.title-2-formulario {
+  color: #41452c;
+  text-align: center;
+  font-family: "Amita", sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+/* Input formulario*/
+.input {
+    display: flex;            
+    flex-direction: row;        
+    justify-content: flex-start; 
+    align-items: center;       
+    margin-bottom: 15px;  
+    margin-top: 15px;
+    height: 51px;      
+}
+.input-label {
+    color: #000000;
+    text-align: right;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+    right: 10%;
+    left: 32%;
+    width: 81.01%;
+    bottom: 5.88%;
+    top: 7.84%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 10px; 
+}
+
+.box-input {
+background-color: #ffffff;
+text-align: left;
+font-family: "Inter", sans-serif;
+font-size: 24px;
+font-weight: 400;
+position: relative;
+right: 20.4%;
+left: -10%;
+width: 739px;
+bottom: 5.88%;
+top: 7.84%;
+height: 51px;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+padding: 10px;
+outline: none;
+border: none;
+}
+
+.box-input-opinion  {
+  background-color: #ffffff;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: relative;
+  right: 20.4%;
+  left: -10%;
+  width: 750px;
+  top: 40%;
+  height: 180%;
+  display: flex;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+
+/* Botón */
+.button {
+  background-color: #FBE4D4;
+  border-radius: 12px;
+  width: 252px;
+  height: 60px;
+  position: relative;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #000000;
+  border: none;
+  text-align: center;
+  margin-top: 90px;
+}
+
+@media (max-width: 768px) {
+  .title-1-formulario {
+    font-size: 1.8rem; /* Ajuste de tamaño de fuente para pantallas más pequeñas */
+  }
+
+  .linea-divisora-formulario {
+    height: 30px;
+    margin: 5px auto; 
+    max-width: 100%;
+  }
+
+  .title-2-formulario {
+    font-size: 2rem;
+  }
+  .input-label {
+    font-size: 18px; /* Reducir el tamaño de la fuente */
+    text-align: left; /* Cambiar la alineación a izquierda */
+    left: 7%; /* Ajustar el margen izquierdo */
+    right: 5%; /* Ajustar el margen derecho */
+    width: 90%; /* Hacer el ancho más pequeño para dispositivos móviles */
+    padding-right: 5px; /* Ajustar el padding */
+  }
+  .box-input,
+  .box-input-opinion {
+    font-size: 1.2rem; /* Ajuste de texto */
+  }
+  .button {
+    width: 50%;
+  }
+}
