@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #f2f1f1;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bgr-color-light-gray: #f2f1f1;
+    --bgr-color-btn: #fdf1f1;
+    --bgr-txt-banner: rgba(131, 123, 113, .5);
+    --bgr-product: #F3F2E9;
+    --color-black: #000;
+    --color-light: #fdf1f1;
+    --color-links-hover: #fd9797;
+    --color-txt-emphasis: #2A3D2C;
+    --color-titles: #41452c;
+    --font-size-txt: 20px;
+    --font-size-txt-btn: 15px;
+    --border-radius-btn: 12px;
+}
+
+/*TIPOGRAFIAS*/
+
+/*AMITA REGULAR*/
+.amita-regular {
+    font-family: "Amita", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*MONTSERRAT REGULAR*/
+.montserrat-regular {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*CONFIGURACION BOTON*/
+.proceso-seccion-6 .txt-btn-proceso .btn-contactanos-proceso,
+.carousel .txt-btn-banner-semana-santa .btn-contactanos-banner-semana-santa {
+    float: right;
+    border-radius: var(--border-radius-btn);
+    background-color: var(--bgr-color-btn);
+    box-shadow: 0 4px 4px 0 rgb(0, 0, 0, 0.25);
+    text-decoration: none;
+    color: var(--color-black);
+    font-size: var(--font-size-txt-btn);
+}
+
+.proceso-seccion-6 .txt-btn-proceso .btn-contactanos-proceso:hover,
+.carousel .txt-btn-banner-semana-santa .btn-contactanos-banner-semana-santa:hover {
+    color: var(--color-links-hover);
+}
+
+/*FIN CONFIGURACIÓN BOTONES*/
+
+/*BANNER SEMANA SANTA*/
+#carouselSemanaSanta {
+    position: relative;
+    z-index: 1;
+}
+
+#carouselSemanaSanta .txt-btn-banner-semana-santa {
+    width: auto;
+    position: absolute;
+    top: 20%;
+    right: 35%;
+    z-index: 3;
+}
+
+.carousel .txt-btn-banner-semana-santa {
+    color: var(--color-light);
+}
+
+#carouselSemanaSanta .txt-banner-semana-santa {
+    background: var(--bgr-txt-banner);
+    border-radius: 8px;
+}
+
+.carousel .txt-btn-banner-semana-santa .frase-principal-texto-banner-semana-santa {
+    font-size: 40px;
+}
+
+.carousel .txt-btn-banner-semana-santa .frase-secundaria-texto-banner-semana-santa {
+    font-size: 20px;
+}
+
+#carouselSemanaSanta .carousel-control-next {
+    justify-content: end;
+}
+
+#carouselSemanaSanta .carousel-control-prev {
+    justify-content: start !important;
+}
+
+#carouselSemanaSanta .carousel-control-next-icon,
+#carouselSemanaSanta .carousel-control-prev-icon {
+    width: 70px !important;
+    height: 70px !important;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*SECCION PROCESOS*/
+.proceso-seccion-6 {
+    padding: 5vw 10vw;
+    background-color: var(--bgr-color-light-gray);
+}
+
+.conocenos-seccion-3 .txt-conocenos,
+.proceso-seccion-6 .txt-btn-proceso .txt-proceso {
+    font-size: var(--font-size-txt);
+}
+
+
+/*SECCION PROCESOS*/
+.proceso-seccion-6 .carousel .carousel-item {
+    transition-duration: 1.5s;
+}
+
+.proceso-seccion-6 #carouselProceso .carousel-inner {
+    width: 399px;
+    height: 399px;
+}
+
+.proceso-seccion-6 .carousel .carousel-indicators {
+    position: relative;
+}
+
+.proceso-seccion-6 .carousel .carousel-indicators .indicator {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.proceso-seccion-6 .carousel-indicators .active {
+    opacity: 1 !important;
+    background-color: var(--color-links-hover) !important;
+}
+
+.proceso-seccion-6 .txt-btn-proceso .amita-regular {
+    color: var(--color-txt-emphasis);
+}
+
+/*BOTON FLOTANTE WHATSAPP*/
+.btn-whatsapp-flotante {
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*MEDIA*/
+/* Ajustes para tablets */
+@media (max-width: 992px) {
+    #carouselSemanaSanta .txt-btn-banner-semana-santa {
+        right: 25%;
+        top: 15%;
+    }
+    
+    .carousel .txt-btn-banner-semana-santa .frase-principal-texto-banner-semana-santa {
+        font-size: 28px;
+    }
+    
+    .carousel .txt-btn-banner-semana-santa .frase-secundaria-texto-banner-semana-santa {
+        font-size: 16px;
+    }
+}
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+    #carouselSemanaSanta .txt-btn-banner-semana-santa {
+        width: 80%;
+        right: 10%;
+        top: 10%;
+    }
+    
+    .carousel .txt-btn-banner-semana-santa .frase-principal-texto-banner-semana-santa {
+        font-size: 22px;
+    }
+    
+    .carousel .txt-btn-banner-semana-santa .frase-secundaria-texto-banner-semana-santa {
+        font-size: 14px;
+    }
+    
+    #carouselSemanaSanta .carousel-control-next-icon,
+    #carouselSemanaSanta .carousel-control-prev-icon {
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
+
+/* Ajustes para móviles pequeños */
+@media (max-width: 576px) {
+    #carouselSemanaSanta .txt-btn-banner-semana-santa {
+        width: 90%;
+        right: 5%;
+        top: 5%;
+    }
+    
+    .carousel .txt-btn-banner-semana-santa .frase-principal-texto-banner-semana-santa {
+        font-size: 18px;
+    }
+    
+    .carousel .txt-btn-banner-semana-santa .frase-secundaria-texto-banner-semana-santa {
+        font-size: 12px;
+    }
+    
+    #carouselSemanaSanta .txt-banner-semana-santa {
+        padding: 5px 10px !important;
+    }
+    
+    .btn-contactanos-banner-semana-santa {
+        font-size: 12px !important;
+        padding: 5px 10px !important;
+    }
+}
